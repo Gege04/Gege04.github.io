@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+          <head>
+             <title>Gennaro Di Chiara </title>
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+                 <meta charset="utf-8" />
+                 <meta name="viewport" content="width=device-width,initial-scalet=1">
+                 <style>
+                     html, body { margin:0;padding:0;}
+                     canvas { dysplay:block; }
+                </style>
+          </head>
+                <body>
+                    <script>
+                    function setup() {
+                        createCanvas(800, 800);
+                      }
+
+                    function draw() {
+                         background(255,117,20);
+                            fill(143,0,255);
+                            //coloro il corpo
+                            line(400,0,400,800);
+                            triangle(mouseX+0,mouseY-80,mouseX+70,mouseY-180,mouseX-70,mouseY-180);
+                            //faccia
+                            fill(255,255,0);
+                            //coloro gli occhi
+                            circle(mouseX-30,mouseY-165,20);
+                            //occhio
+                            circle(mouseX+30,mouseY-165,20);
+                            //occhio
+                            fill(143,0,255);
+                            //ricoloro il corpo
+                            rect(mouseX-100,mouseY-80,200,300);
+                            //corpo
+                            rect(mouseX-90,mouseY+220,50,200);
+                            //prima gamba
+                            rect(mouseX+40,mouseY+220,50,200);
+                            //seconda gamba
+                            rect(mouseX-160,mouseY-80,60,30);
+                            //giuntura
+                            rect(mouseX-160,mouseY-80,50,200);
+                            //braccio
+                            rect(mouseX+100,mouseY-80,50,30);
+                            //giuntura
+                            rect(mouseX+110,mouseY-80,50,200);
+                            //braccio
+                            fill(255,255,0);
+                            //coloro naso,bocca,atenne
+                            rect(mouseX+20,mouseY-230,10,50);
+                            //antenne
+                            rect(mouseX-30,mouseY-230,10,50);
+                            //antenne
+                            rect(mouseX-15,mouseY-120,30,10);
+                            //bocca
+                            square(mouseX-10,mouseY-150,20);
+                            //naso
+  }
+                    </script>
+              </body>
+          </html>
